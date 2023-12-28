@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+    hibernate:
+      ddl-auto: none
+
+postgres-properties:
+  uri: jdbc:postgresql://localhost:5432/postgres
+  username: postgres
+  password: postgres
+  driver: org.postgresql.Driver
